@@ -1,0 +1,13 @@
+<h:dataTable value="#{cdBean.cds}" var="cd">
+    <h:column>
+        <f:facet name="header">Titre</f:facet>
+        #{cd.titre}
+    </h:column>
+    <h:column>
+        <f:facet name="header">Artiste</f:facet>
+        #{cd.artiste}
+    </h:column>
+    <h:column>
+        <h:commandButton value="Emprunter" action="#{cdBean.emprunter(cd.id)}"/>
+    </h:column>
+</h:dataTable>

@@ -1,0 +1,10 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+  <persistence-unit name="BibliothequePU">
+    <jta-data-source>java:/MyDataSource</jta-data-source>
+    <class>com.kaoutar.bibliotheque.model.Cd</class>
+    <class>com.kaoutar.bibliotheque.model.Emprunt</class>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
